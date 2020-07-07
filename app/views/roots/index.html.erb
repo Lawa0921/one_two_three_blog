@@ -1,0 +1,31 @@
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner", style="postsition: absolute;">
+    <div class="carousel-item active">
+      <%= image_tag "1.jpg", class:"d-block w-100"%>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "2.jpg", class:"d-block w-100"%>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "3.jpg", class:"d-block w-100"%>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<% @posts.each do |post| %>
+  <div>
+    <%= post.title %>
+    <%= post.content %>
+    <%= link_to t("show"), post_path(post) %>
+    <%= link_to t("edit"), edit_post_path(post) %>
+    <%= link_to t("delete"), post_path(post), data: {method: "DELETE", confirm: "Are you sure you want to delete"}%>
+  </div>
+<% end %>
