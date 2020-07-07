@@ -6,6 +6,6 @@
     <%= post.content %>
     <%= link_to t("show"), post_path(post) %>
     <%= link_to t("edit"), edit_post_path(post) %>
-    <%= link_to t("delete"), post_path(post), method: "DELETE" %>
+    <%= link_to t("delete"), post_path(post), method: "DELETE", confirm: "Are you sure you want to delete"%>
   </div>
 <% end %>
