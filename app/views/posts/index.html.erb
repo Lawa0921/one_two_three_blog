@@ -4,10 +4,8 @@
   <div>
     <%= post.title %>
     <%= post.content %>
-    <%= link_to "檢視", post_path(post) %>
-    <%= link_to "編輯", edit_post_path(post) %>
-    <%= link_to "刪除", post_path(post), method: "DELETE" %>
+    <%= link_to t("show"), post_path(post) %>
+    <%= link_to t("edit"), edit_post_path(post) %>
+    <%= link_to t("delete"), post_path(post), method: "DELETE" %>
   </div>
 <% end %>
-
-<%= link_to "新增POST", new_post_path %>
