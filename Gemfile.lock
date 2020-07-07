@@ -208,6 +208,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  i18n (~> 1.8)
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
   listen (~> 3.2)
