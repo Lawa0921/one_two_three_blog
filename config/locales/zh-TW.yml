@@ -7,10 +7,12 @@ zh-TW:
   show: "檢視"
   edit: "編輯"
   delete: "刪除"
+  projects: "開發"
   post:
     title: "標題"
     content: "內文"
     new: "新增文章"
+    list: "文章列表"
   activerecord:
     errors:
       messages:

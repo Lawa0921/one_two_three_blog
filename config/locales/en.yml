@@ -7,10 +7,12 @@ en:
   show: "Show"
   edit: "Edit"
   delete: "Delete"
+  projects: "Projects"
   post:
     title: "Title"
     content: "Content"
     new: "New Post"
+    list: "Lists"
   activerecord:
     errors:
       messages:
