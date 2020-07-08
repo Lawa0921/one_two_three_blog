@@ -1,3 +1,5 @@
+import './reset.css'
 import './style.scss'
 import './root.scss'
 import './public.scss'
+import './navbar.scss'
