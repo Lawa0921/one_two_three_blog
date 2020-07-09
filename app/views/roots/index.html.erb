@@ -3,13 +3,3 @@
     <h1>一個部落格</br>兩個人，三隻貓</h1>
   </div>
 </div>
-
-<% @posts.each do |post| %>
-  <div>
-    <%= post.title %>
-    <%= post.content %>
-    <%= link_to t("show"), post_path(post) %>
-    <%= link_to t("edit"), edit_post_path(post) %>
-    <%= link_to t("delete"), post_path(post), data: {method: "DELETE", confirm: "Are you sure you want to delete"}%>
-  </div>
-<% end %>
