@@ -8,6 +8,9 @@ zh-TW:
   edit: "編輯"
   delete: "刪除"
   projects: "開發計畫"
+  sign_in: "登入"
+  sign_out: "登出"
+  sign_up: "註冊"
   post:
     title: "標題"
     content: "內文"

@@ -1,0 +1,19 @@
+<nav class="main-navbar navbar navbar-light">
+  <%= link_to t('name'), root_path, class:"nav-logo standard-link"%>
+  <div>
+    <ul class="navbar-nav ml-auto">
+      <% if current_user.present? %>
+        <li class="nav-item mx-3">
+          <%= link_to t("sign_out"), destroy_user_session_path, method: :delete, class:"nav-link" %>
+        </li>
+      <% else %>
+        <li class="nav-item mx-3">
+          <%= link_to t("sign_up"), new_user_registration_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item mx-3">
+          <%= link_to t("sign_in"), new_user_session_path, class:"nav-link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
