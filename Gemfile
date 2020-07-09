@@ -5,7 +5,7 @@ ruby '2.7.0'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'pg', '~> 1.2', '>= 1.2.3'
-gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
