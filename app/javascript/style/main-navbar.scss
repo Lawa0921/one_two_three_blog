@@ -1,0 +1,16 @@
+.main-navbar {
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,.08);
+  padding: 0 16px;
+  .nav-logo {
+  }
+  div {
+    .navbar-nav {
+      flex-direction: row;
+      .nav-item {
+        .nav-link {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
