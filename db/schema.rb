@@ -55,10 +55,9 @@ ActiveRecord::Schema.define(version: 2020_07_09_113613) do
     t.string "email"
     t.string "password"
     t.string "name"
-    t.integer "type"
+    t.integer "user_type", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "nickname"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

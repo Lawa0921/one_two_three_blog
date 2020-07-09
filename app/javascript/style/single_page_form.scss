@@ -1,0 +1,21 @@
+.single-page-form-container {
+  .card {
+    background-color: #fdce12;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.08);
+    border: 2px solid #45352B;
+    .card-body {
+      form {
+        .field {
+          .form-control {
+            background-color: #fdce12;
+            border: 2px solid #45352B;
+            transition: box-shadow 0.2s ease-in-out;
+          }
+          .form-control:focus {
+            box-shadow: 0 0 0 0.1rem #45352B;
+          }
+        }
+      }
+    }
+  }
+}
