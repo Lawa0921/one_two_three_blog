@@ -9,9 +9,11 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body style="background-color: #fdce12;">
+  <body style="background-color: #fdce12">
     <%= render "shared/main_navbar"%>
-    <%= yield %>
+    <div style="min-height: calc(100vh - 140px);">
+      <%= yield %>
+    </div>
     <%= render "shared/footer"%>
   </body>
 </html>
