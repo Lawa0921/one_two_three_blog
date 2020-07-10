@@ -41,9 +41,9 @@
 
         <div class="actions row p-3">
           <%= f.submit t("user.update"), class:"main-btn" %>
-          <%= button_to t("user.cancel"), registration_path(resource_name), data: { confirm: t("user.cancel_confirm") }, method: :delete , class:"danger-btn ml-5"%>
         </div>
       <% end %>
+      <%= button_to t("user.cancel"), registration_path(resource_name), data: { confirm: t("user.cancel_confirm") }, method: :delete , class:"danger-btn"%>
     </div>
   </div>
 </div>
