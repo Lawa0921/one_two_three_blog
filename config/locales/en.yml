@@ -1,4 +1,5 @@
 en:
+  setting: "Setting"
   my_blog: "My Blog"
   build_blog: "Build Blog"
   find_blog: "Find Blog"
@@ -18,7 +19,8 @@ en:
     email: "Email"
     password: "Password"
     password_confirmation: "Password Confirmation"
-    name: "暱稱"
+    name: "Nickname"
+    setting: "Setting"
   post:
     title: "Title"
     content: "Content"

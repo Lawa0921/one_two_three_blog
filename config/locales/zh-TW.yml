@@ -1,4 +1,5 @@
 zh-TW:
+  setting: "設定"
   my_blog: "我的部落格"
   build_blog: "蓋個部落格"
   find_blog: "找找部落格"
@@ -19,6 +20,7 @@ zh-TW:
     password: "密碼"
     password_confirmation: "密碼確認"
     name: "暱稱"
+    setting: "使用者設定"
   post:
     title: "標題"
     content: "內文"

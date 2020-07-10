@@ -3,6 +3,14 @@
   <div>
     <ul class="navbar-nav ml-auto">
       <% if current_user.present? %>
+        <li class="nav-item dropdown" style="position: relative">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= t('setting')%>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="position: absolute;">
+            <%= link_to t("user.setting"), edit_user_registration_path, class:"dropdown-item"%>
+          </div>
+        </li>
         <li class="nav-item mx-3">
           <%= link_to t("sign_out"), destroy_user_session_path, method: :delete, class:"nav-link" %>
         </li>

@@ -1,6 +1,6 @@
 .main-navbar {
   box-shadow: 0 4px 18px 0 rgba(0,0,0,.08);
-  padding: 0 16px;
+  padding: 0 48px;
   .nav-logo {
   }
   div {
@@ -9,6 +9,15 @@
       .nav-item {
         .nav-link {
           padding: 0;
+        }
+        .dropdown-menu {
+          background-color: #2C1D25;
+          .dropdown-item {
+            color: #fdce12;
+          }
+          .dropdown-item:hover {
+            background-color: #2C1D25;
+          }
         }
       }
     }
