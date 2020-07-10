@@ -2,4 +2,20 @@
   <div>
     <h1>一個部落格</br>兩個人，三隻貓</h1>
   </div>
+  <% if current_user.present? %>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 p-5">
+          <%= link_to t('my_blog'), root_path, class:"main-btn d-block standard-link"%>
+        </div>
+        <div class="col-12 col-md-4 p-5">
+          <%= link_to t('build_blog'), root_path, class:"main-btn d-block standard-link"%>
+        </div>
+        <div class="col-12 col-md-4 p-5">
+          <%= link_to t('find_blog'), root_path, class:"main-btn d-block standard-link"%>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
 </div>
