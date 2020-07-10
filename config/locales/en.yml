@@ -1,4 +1,5 @@
 en:
+  current_password: "Current password"
   setting: "Setting"
   my_blog: "My Blog"
   build_blog: "Build Blog"
@@ -21,6 +22,16 @@ en:
     password_confirmation: "Password Confirmation"
     name: "Nickname"
     setting: "Setting"
+    edit: "Edit User"
+    update: "Update"
+    cancel: "Cancel my account"
+    cancel_confirm: "Are you sure?"
+  devise:
+    edit:
+      current_password:
+        info: "We need your current password to confirm your changes"
+      password:
+        info: "Leave blank if you don't want to change it"
   post:
     title: "Title"
     content: "Content"

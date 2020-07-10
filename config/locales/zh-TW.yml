@@ -1,4 +1,5 @@
 zh-TW:
+  current_password: "當前密碼"
   setting: "設定"
   my_blog: "我的部落格"
   build_blog: "蓋個部落格"
@@ -21,6 +22,16 @@ zh-TW:
     password_confirmation: "密碼確認"
     name: "暱稱"
     setting: "使用者設定"
+    edit: "使用者資料"
+    update: "更新使用者"
+    cancel: "刪除帳號"
+    cancel_confirm: "這個動作是不可逆的，您確定要刪除您的帳號嗎？！"
+  devise:
+    edit:
+      current_password:
+        info: "我們需要您當前的密碼來確認您的更改"
+      password:
+        info: "如果您不想更改密碼，請留空"
   post:
     title: "標題"
     content: "內文"

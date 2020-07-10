@@ -17,8 +17,13 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
-.outline-btn {
-
+.danger-btn {
+  background-color: #e34c4c;
+  color: #fdce12;
+  border: 2px solid #2C1D25;
+  border-radius: 8px;
+  padding: 3px 10px;
+  font-weight: bold;
 }
 .main-checkbox {
   margin: 0;
