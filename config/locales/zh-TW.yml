@@ -37,6 +37,8 @@ zh-TW:
     content: "內文"
     new: "新增文章"
     list: "文章列表"
+  site:
+    random: "讚讚的網站"
   activerecord:
     errors:
       messages:

@@ -1,0 +1,13 @@
+<div class="container">
+  <h1><%= t('site.random')%></h1>
+  <div class="row">
+    <% @sites.each do |site| %>
+      <div class="col-12 col-md-4 p-5">
+        <%= site.title%>
+        <%= site.description %>
+        <%#= site.tags %>
+        <%#= site.users %>
+      </div>
+    <% end %>
+  </div>
+</div>

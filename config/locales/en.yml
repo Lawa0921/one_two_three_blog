@@ -37,6 +37,8 @@ en:
     content: "Content"
     new: "New Post"
     list: "Lists"
+  site:
+    random: "Goooood site"
   activerecord:
     errors:
       messages:
