@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root "roots#index"
-  get "/about" ,to: "roots#about", as: "about"
-  resources :posts
   resources :sites, only: [:index]
+  scope "/:user_name" do
+    resources :sites, except: [:index]
+  end
+  resources :posts
   devise_for :users
 end
