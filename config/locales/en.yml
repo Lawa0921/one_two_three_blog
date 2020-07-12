@@ -45,6 +45,7 @@ en:
     title_holder: "White some good title!"
     desc_holder: "White some good description!"
     submit: "Create site"
+    create: "Site was successfully created"
   activerecord:
     errors:
       messages:
