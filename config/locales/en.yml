@@ -39,6 +39,12 @@ en:
     list: "Lists"
   site:
     random: "Goooood site"
+    new: "New site"
+    title: "Title"
+    description: "About this site"
+    title_holder: "White some good title!"
+    desc_holder: "White some good description!"
+    submit: "Create site"
   activerecord:
     errors:
       messages:

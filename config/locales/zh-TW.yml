@@ -39,6 +39,12 @@ zh-TW:
     list: "文章列表"
   site:
     random: "讚讚的網站"
+    new: "新網站"
+    title: "網站大名"
+    description: "關於這個網站"
+    title_holder: "寫個帥氣的網站名"
+    desc_holder: "寫點什麼吧"
+    submit: "我填好了"
   activerecord:
     errors:
       messages:
