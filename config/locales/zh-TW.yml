@@ -45,6 +45,7 @@ zh-TW:
     title_holder: "寫個帥氣的網站名"
     desc_holder: "寫點什麼吧"
     submit: "我填好了"
+    create: "創好網站囉！"
   activerecord:
     errors:
       messages:

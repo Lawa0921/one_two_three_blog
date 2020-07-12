@@ -10,18 +10,18 @@
             <% end %>
           </ul>
         <% end %>
+
         <div class="field form-group">
           <%= f.label :title, t("site.title")%>
           <%= f.text_field :title, placeholder: t("site.title_holder"), class:"form-control" %>
         </div>
-        <br>
 
         <div class="field form-group">
           <%= f.label :description, t("site.description") %>
           <%= f.text_area :description, placeholder: t("site.desc_holder"), class:"form-control", style:"min-height: 300px;" %>
         </div>
 
-        <div class="action">
+        <div class="actions">
           <%= f.submit t("site.submit"), class:"main-btn"%>
         </div>
       <% end %>
