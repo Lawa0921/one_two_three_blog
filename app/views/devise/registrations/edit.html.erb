@@ -28,15 +28,21 @@
           <% end %>
         </div>
 
+
         <div class="field form-group">
           <%= f.label :password_confirmation, t("user.password_confirmation") %><span>(<%= t("devise.edit.password.info")%>)</span><br />
           <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
         </div>
 
-
         <div class="field form-group">
           <%= f.label :name, t("user.name") %>
           <%= f.text_field :name, class:"form-control" %>
+        </div>
+
+        <div class="field-avatar my-3">
+          <%= f.label :avatar %>
+          <%= image_tag @user.avatar if @user.avatar.attached? %>
+          <%= f.file_field :avatar, class: "btn-avatar" %>
         </div>
 
         <div class="actions row p-3">
