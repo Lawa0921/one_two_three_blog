@@ -42,11 +42,11 @@
         <div class="field form-group">
           <% if @user.avatar.attached? %>
             <div class="avatar-wrap w-100">
-              <div>大頭貼</div>
+              <div><%= t("user.avatar") %> </div>
               <%= image_tag @user.avatar.variant(resize_to_limit: [200, 200])%>
             </div>
           <% else %>
-            <div>新增一個大頭貼嗎？</div>
+            <div><%= t("user.new_avatar")%></div>
           <% end %>
             <label class="main-btn my-3" style="cursor: pointer;">
               <%= t("user.upload_avatar") %>

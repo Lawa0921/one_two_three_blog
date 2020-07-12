@@ -28,6 +28,7 @@ en:
     cancel_confirm: "Are you sure?"
     avatar: "Avatar"
     upload_avatar: "Upload avatar"
+    new_avatar: "Do you want to upload new avatar?"
   devise:
     edit:
       current_password:
