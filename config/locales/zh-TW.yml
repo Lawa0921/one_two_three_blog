@@ -26,6 +26,8 @@ zh-TW:
     update: "更新使用者"
     cancel: "刪除帳號"
     cancel_confirm: "這個動作是不可逆的，您確定要刪除您的帳號嗎？！"
+    avatar: "大頭貼"
+    upload_avatar: "上傳圖片"
   devise:
     edit:
       current_password:
