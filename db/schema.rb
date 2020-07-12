@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 2020_07_12_055759) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "owner"
+    t.string "owner", default: "", null: false
   end
 
   create_table "users", force: :cascade do |t|

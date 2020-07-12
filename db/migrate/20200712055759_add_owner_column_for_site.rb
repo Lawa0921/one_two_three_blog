@@ -1,5 +1,5 @@
 class AddOwnerColumnForSite < ActiveRecord::Migration[6.0]
   def change
-    add_column :sites, :owner, :string
+    add_column :sites, :owner, :string, null: false, default: ""
   end
 end

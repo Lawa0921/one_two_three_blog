@@ -9,7 +9,8 @@ class SitesController < ApplicationController
 
   def create
     @site = Site.new(site_params)
-    if @site.save && @site.users << current_user
+    @site.owner = current_user.name
+    if @site.users << current_user && @site.save
       redirect_to sites_path(user_name: current_user.name), notice: t("site.create")
     else
       render :new
