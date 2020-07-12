@@ -3,8 +3,6 @@ class CreateSiteUsers < ActiveRecord::Migration[6.0]
     create_table :site_users do |t|
       t.references :user, null: false, foreign_key: true
       t.references :site, null: false, foreign_key: true
-
-      t.timestamps
     end
   end
 end
