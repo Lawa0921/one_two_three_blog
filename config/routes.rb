@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     resources :sites, except: [:index, :new, :create]
   end
   resources :posts
-  devise_for :users
+  devise_for :users, controllers: {
+        registrations: 'user/registrations'
+      }
 end
