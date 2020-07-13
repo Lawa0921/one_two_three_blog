@@ -43,12 +43,14 @@ en:
   site:
     random: "Goooood site"
     new: "New site"
+    edit: "Edit site"
     title: "Title"
     description: "About this site"
     title_holder: "White some good title!"
     desc_holder: "White some good description!"
     submit: "Create site"
     create: "Site was successfully created"
+    update: "Site was successfully updated"
     setting: "Site setting"
   activerecord:
     errors:

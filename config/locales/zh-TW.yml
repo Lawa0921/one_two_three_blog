@@ -43,12 +43,14 @@ zh-TW:
   site:
     random: "讚讚的網站"
     new: "新網站"
+    edit: "編輯網站"
     title: "網站大名"
     description: "關於這個網站"
     title_holder: "寫個帥氣的網站名"
     desc_holder: "寫點什麼吧"
     submit: "我填好了"
     create: "創好網站囉！"
+    update: "更新成功！"
     setting: "網站設定"
   activerecord:
     errors:
