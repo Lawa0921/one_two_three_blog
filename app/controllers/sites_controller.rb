@@ -21,6 +21,10 @@ class SitesController < ApplicationController
     @site = Site.new
   end
 
+  def show
+    @site = Site.find_by!(title: params[:id])
+  end
+
   private
   def site_params
     params.require(:site).permit(:title, :description)

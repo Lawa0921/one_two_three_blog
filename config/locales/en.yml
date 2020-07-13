@@ -49,6 +49,7 @@ en:
     desc_holder: "White some good description!"
     submit: "Create site"
     create: "Site was successfully created"
+    setting: "Site setting"
   activerecord:
     errors:
       messages:

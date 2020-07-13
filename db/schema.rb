@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_12_055759) do
+ActiveRecord::Schema.define(version: 2020_07_13_041429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 2020_07_12_055759) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.integer "site_id"
+    t.index ["site_id"], name: "index_posts_on_site_id"
   end
 
   create_table "site_users", force: :cascade do |t|

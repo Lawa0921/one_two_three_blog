@@ -49,6 +49,7 @@ zh-TW:
     desc_holder: "寫點什麼吧"
     submit: "我填好了"
     create: "創好網站囉！"
+    setting: "網站設定"
   activerecord:
     errors:
       messages:
