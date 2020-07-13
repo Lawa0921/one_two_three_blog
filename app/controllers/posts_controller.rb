@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = Site.find_by(title: params[:site_id]).posts.new
   end
 
   def create

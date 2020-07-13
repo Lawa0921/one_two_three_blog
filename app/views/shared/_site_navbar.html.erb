@@ -1,0 +1,24 @@
+<nav class="site-navbar navbar navbar-expand-lg navbar-light">
+  <%= link_to @site.title, site_path(user_name: current_user.name, id: @site.title), class:"nav-logo standard-link"%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item mx-3">
+        <%= link_to t("home"), site_path(user_name: current_user.name, id: @site.title), class:"nav-link"%>
+      </li>
+      <li class="nav-item mx-3">
+        <%= link_to t("post.list"), site_posts_path(user_name: current_user.name, site_id: @site.title), class:"nav-link"%>
+      </li>
+      <% if @site.users.map(&:name).include?(current_user.name) %>
+        <li class="nav-item mx-3">
+          <%= link_to t("post.new"), new_site_post_path(user_name: current_user.name, site_id: @site.title), class:"nav-link" %>
+        </li>
+        <li class="nav-item mx-3">
+          <%= link_to t("site.setting"), edit_site_path, class:"nav-link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
