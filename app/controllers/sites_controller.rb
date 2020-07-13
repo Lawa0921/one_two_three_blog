@@ -22,7 +22,7 @@ class SitesController < ApplicationController
   end
 
   def show
-    @site = Site.find_by!(title: params[:id])
+    target_site
   end
 
   private

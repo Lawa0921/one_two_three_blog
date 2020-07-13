@@ -6,13 +6,13 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Site.find_by(title: params[:site_id]).posts.new
+    @post = target_site.posts.new
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = target_site.posts.new(post_params)
     if @post.save
-      redirect_to posts_path
+      redirect_to site_path(user_name: target_user.name, id: target_site.title)
     else
       render :new
     end
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to posts_path
+      redirect_to site_path(user_name: target_user.name, id: target_site.title)
     else
       render :edit
     end
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
 
   def destroy
     if @post.destroy
-      redirect_to posts_path
+      redirect_to site_path(user_name: target_user.name, id: target_site.title)
     else
     end
   end
