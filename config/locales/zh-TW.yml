@@ -36,10 +36,11 @@ zh-TW:
       password:
         info: "如果您不想更改密碼，請留空"
   post:
-    title: "標題"
+    title: "文章標題"
     content: "內文"
     new: "新增文章"
     list: "文章列表"
+    submit: "送出文章"
   site:
     random: "讚讚的網站"
     new: "新網站"
