@@ -22,9 +22,7 @@ class User::RegistrationsController < Devise::RegistrationsController
   # PUT /resource
   def update
     @sites = Site.where(owner: @user.name)
-    byebug
     super
-    byebug
     @sites.each do |site|
       site.owner = @user.name
       site.save
