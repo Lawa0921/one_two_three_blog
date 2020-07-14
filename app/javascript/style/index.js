@@ -1,3 +1,4 @@
+import './trix_editor.scss'
 import './reset.css'
 import './style.scss'
 import './root.scss'

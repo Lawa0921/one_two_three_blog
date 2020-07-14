@@ -1,0 +1,78 @@
+trix-toolbar {
+  .trix-button-row {
+    .trix-button-group {
+      border: 2px solid #45352B;
+      box-shadow:0 4px 18px 0 rgba(0,0,0,.08);
+      .trix-button {
+        border: 1px solid #45352B;
+      }
+    }
+  }
+  .trix-dialogs {
+    .trix-dialog {
+      top: 1em;
+      left: unset;
+      right: 1em;
+      box-shadow:4px 10px 10px 10px rgba(0,0,0,.08);
+    }
+    .trix-dialog--link {
+      background-color: #fdce12;
+      border: 2px solid #45352B;
+      .trix-dialog__link-fields {
+        .trix-input {
+          background-color: #fdce12;
+          border: 2px solid #45352B;
+          transition: box-shadow 0.2s ease-in-out;
+        }
+        .trix-input:focus {
+          box-shadow: 0 0 0 0.1rem #45352B;
+        }
+        .trix-button-group {
+          border: 2px solid #45352B;
+          .trix-button {
+            border: 1px solid #45352B;
+            color: #45352B;
+          }
+        }
+      }
+    }
+  }
+}
+.trix-content {
+  background-color: #fdce12;
+  border: 2px solid #45352B;
+  transition: box-shadow 0.2s ease-in-out;
+  min-height: 20rem;
+  blockquote {
+    border-left: 0.3em solid #45352B;
+    border-bottom: none;
+    margin: 5px 0;
+  }
+  pre {
+    background-color: #45352B;
+    color: #fdce12;
+    line-height: 1em;
+  }
+  a {
+    color: #e34c4c;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  figure {
+    border: 2px solid #45352B;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 4px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+}
+.trix-content:focus {
+  box-shadow: 0 0 0 0.1rem #45352B;
+}
+.attachment__caption-editor {
+  background-color: #fdce12;
+  height: 24px;
+  line-height: 1.2em;
+}
+.attachment__toolbar {
+  top: 0.3em !important;
+}

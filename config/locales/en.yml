@@ -40,6 +40,7 @@ en:
     content: "Content"
     new: "New Post"
     list: "Lists"
+    submit: "Create post"
   site:
     random: "Goooood site"
     new: "New site"
