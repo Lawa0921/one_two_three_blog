@@ -59,10 +59,12 @@ trix-toolbar {
     text-decoration: underline;
   }
   figure {
-    border: 2px solid #45352B;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px 4px rgba(0,0,0,.08);
-    overflow: hidden;
+    img {
+      border: 2px solid #45352B;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px 4px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
   }
 }
 .trix-content:focus {
