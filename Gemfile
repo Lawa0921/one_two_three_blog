@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'rmagick'
 gem 'mini_magick', '~> 4.10'
 gem 'i18n', '~> 1.8'
